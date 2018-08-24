@@ -131,7 +131,7 @@ h1 {
         transform: scale(1.2);
 }
 
-.photo1 i {
+.photo i {
     font-size: 2.9em;
     background: #002642;
     border-radius: 50%;
@@ -142,11 +142,17 @@ h1 {
     border: .063em solid #002642;
 }
 
-.photo1 i:hover {
+.photo i:hover {
     background-color: #E5DADA;
     color: #E59500;
     transition: 0.33s ease;  
     border-color: #E5DADA;
+}
+
+.portImage{
+    width: 17.2em;
+    height: 14em;
+
 }
 
 .labelText {
@@ -176,11 +182,10 @@ h1 {
     width: 100%;
 }
 
-.photo1 {
-    margin: 0.9em;
+.photo {
+    margin: 0.5em 1.4em 0.5em 0;
     float: left;
     position: relative;
-    width: 17.5em
 }
 
 section a:hover {
@@ -264,8 +269,8 @@ align-content: left;
        text-align: center;
    }
 
-   .photo1 {
-       width: 90%;
+   .photo {
+       margin: 0 auto;
    }
 
    #nav {
@@ -283,6 +288,11 @@ align-content: left;
    .me {
        width: 100%;
    }
+
+   footer {
+    padding:0;
+    text-align: center;
+}
 }
 
 .cf:before,
