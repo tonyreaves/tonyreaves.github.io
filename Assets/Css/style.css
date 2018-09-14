@@ -141,6 +141,7 @@ nav a:hover {
   border: 0.063em solid #002642;
 }
 
+.photo:hover,
 .photo i:hover,
 .photo i:focus {
   background-color: #e5dada;
