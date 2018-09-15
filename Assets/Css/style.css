@@ -123,7 +123,6 @@ nav a:hover {
   text-decoration: none;
 }
 
-.grow:focus,
 .grow:hover {
   -webkit-transform: scale(1.2);
   -ms-transform: scale(1.2);
@@ -141,9 +140,8 @@ nav a:hover {
   border: 0.063em solid #002642;
 }
 
-.photo:hover,
 .photo i:hover,
-.photo i:focus {
+.icon:focus i {
   background-color: #e5dada;
   color: #e59500;
   transition: 0.33s ease;
