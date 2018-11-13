@@ -3,7 +3,7 @@ article {
 }
 
 body {
-  background-color: #e59500;
+  background-color: #898b8b;
   background-image: url("images/bg.jpg");
   position: relative;
   display: flex;
@@ -92,7 +92,7 @@ nav a:hover {
 
 .labelPhoto {
   background: #840032;
-  bottom: 2.9em;
+  bottom: 3.8em;
   color: #e5dada;
   justify-content: stretch;
   display: flex;
@@ -100,15 +100,17 @@ nav a:hover {
   font-size: 1.2em;
   position: relative;
   width: 14.33em;
+  /* height: 2.7em; */
   text-decoration: none;
 }
+
 .labelPhoto a {
   height: 100%;
   width: 100%;
 }
 
 .labelPhoto a:hover,
-.labelPhoto a:focus {
+.labelPhoto h1:focus {
   background-color: #e59500;
   color: #e5dada;
   transition: 0.33s ease;
@@ -130,13 +132,13 @@ nav a:hover {
 }
 
 .photo i {
-  font-size: 2.9em;
+  font-size: 3em;
   background: #002642;
   border-radius: 50%;
   color: #e5dada;
   position: absolute;
-  bottom: 1.075em;
-  left: 4.6em;
+  bottom: 1.56em;
+  left: 4.5em;
   border: 0.063em solid #002642;
 }
 
@@ -153,8 +155,19 @@ nav a:hover {
   height: 14em;
 }
 
+.portfolio {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
 .labelText {
   padding: 0.5em 0 0.5em 0.4em;
+}
+
+.tech {
+  font-size: 0.7em;
+  padding-top: 0.55em;
 }
 
 .me {
@@ -182,8 +195,7 @@ nav {
 }
 
 .photo {
-  margin: 0.5em 1.4em 0.5em 0;
-  float: left;
+  margin: 0.5em 1.5em 0.5em 0;
   position: relative;
 }
 
@@ -202,7 +214,6 @@ footer {
   font-size: 0.8em;
   position: fixed;
   width: 100%;
-  padding-left: 4em;
 }
 
 @media only screen and (max-width: 980px) {
