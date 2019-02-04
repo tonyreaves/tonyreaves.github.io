@@ -4,7 +4,6 @@ article {
 
 body {
   background-color: #898b8b;
-  background-image: url("images/bg.jpg");
   position: relative;
   display: flex;
   height: 100vh;
@@ -44,7 +43,7 @@ h1 {
   top: 1.5em;
   position: relative;
   border-top: 1.2em solid #000300;
-  height: max-content;
+  height: fit-content;
 }
 
 .contacts div {
@@ -296,6 +295,7 @@ footer {
     width: 100%;
     position: relative;
     margin-bottom: 1em;
+    border: 0;
   }
 
   .me {
