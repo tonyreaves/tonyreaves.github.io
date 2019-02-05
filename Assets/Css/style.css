@@ -139,7 +139,7 @@ nav a:hover {
   color: #f7f9f9;
   position: absolute;
   bottom: 1.56em;
-  left: 5em;
+  left: 4.5em;
   border: 0.063em solid #000300;
 }
 
@@ -152,8 +152,8 @@ nav a:hover {
 }
 
 .portImage {
-  width: 19em;
-  height: 15em;
+  width: 17.2em;
+  height: 14em;
   border-radius: 5%;
   border: 0.3rem solid #e59500;
 }
