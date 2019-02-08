@@ -1,0 +1,251 @@
+$colors: (
+  bg: #898b8b,
+  bg-dark: #3f4045,
+  text-black: #000300,
+  secondary: #235789,
+  accent: #e59500,
+  text-white: #e5dada
+);
+
+$line-height: 1.5;
+$body-font: "Oxygen", sans-serif;
+$head-font: "Roboto Slab", serif;
+$transition-time: 0.33s ease;
+
+@function color($color-name) {
+  @return map-get($colors, $color-name);
+}
+
+article {
+  padding-bottom: 1.5em;
+}
+
+body {
+  background-color: color(bg);
+  position: relative;
+  display: flex;
+  height: 100vh;
+}
+
+h1 {
+  background-color: color(text-black);
+  color: color(text-white);
+  font-family: $head-font;
+  font-size: 2.5em;
+  padding: 0.25em;
+  text-align: left;
+}
+
+main a:hover {
+  background-color: color(accent);
+  color: color(text-white);
+  transition: $transition-time;
+}
+
+nav {
+  color: color(text-white);
+  font-family: $body-font;
+  font-weight: 500;
+  padding-top: 1.3em;
+  text-decoration: none;
+  text-align: right;
+
+  a:hover {
+    background-color: color(accent);
+    color: color(text-black);
+    transition: $transition-time;
+  }
+}
+
+footer {
+  background-color: color(text-black);
+  bottom: 0;
+  color: color(text-white);
+  height: 3em;
+  font-family: $body-font;
+  font-size: 0.8em;
+  position: fixed;
+  width: 100%;
+}
+
+.about {
+  color: color(text-white);
+  font-family: $body-font;
+  line-height: 1.5em;
+  font-size: 1.15em;
+  float: left;
+  width: 95%;
+}
+
+.anav {
+  color: color(text-white);
+  text-decoration: none;
+  padding: 0.1em;
+}
+
+.contacts {
+  div {
+    display: flex;
+    flex-grow: 1;
+  }
+
+  h3 {
+    color: color(text-white);
+    font-size: 1.25em;
+    font-family: $body-font;
+    line-height: $line-height;
+    margin: 0.25em;
+  }
+
+  a {
+    text-decoration: none;
+    color: color(text-white);
+  }
+}
+
+.content-box {
+  background: color(bg-dark);
+  color: color(text-black);
+  margin: 4em auto 1em;
+  padding: 1.25rem;
+  width: 85%;
+  top: 1.5rem;
+  position: relative;
+  border-top: 1.2em solid color(text-black);
+  height: fit-content;
+}
+
+.headClass {
+  background-color: color(bg-dark);
+  border: 0.16em;
+  border-bottom: 0.2em solid;
+  border-color: color(text-black);
+  font-family: $body-font;
+  height: 3.7em;
+  margin-bottom: 0.8em;
+  position: fixed;
+  text-decoration: none;
+  width: 100%;
+  z-index: 1;
+  justify-content: space-between;
+  color: color(text-white);
+}
+
+.container {
+  width: 88%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  a {
+    color: color(text-white);
+    text-decoration: none;
+    padding: 0.1em;
+  }
+}
+
+.labelPhoto {
+  background: color(secondary);
+  bottom: 3.8em;
+  color: color(text-white);
+  display: flex;
+  justify-content: stretch;
+  font-family: $head-font;
+  font-size: 1.2em;
+  position: relative;
+  width: 100%;
+  /* height: 2.7em; */
+  text-decoration: none;
+
+  a {
+    height: 100%;
+    width: 100%;
+  }
+
+  a:hover,
+  h1:focus {
+    background-color: color(accent);
+    color: color(text-white);
+    transition: 0.33s ease;
+  }
+
+  p {
+    text-decoration: none;
+  }
+}
+
+.labelText {
+  color: color(text-white);
+  text-decoration: none;
+}
+
+.grow:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.photo {
+  margin: 0.3em 2.2em 0 0;
+  position: relative;
+
+  i {
+    font-size: 3em;
+    background: color(text-black);
+    border-radius: 50%;
+    color: color(text-white);
+    position: absolute;
+    bottom: 1.56em;
+    left: 4.5em;
+    border: 0.063em solid color(text-black);
+  }
+  i:hover {
+    background-color: color(text-white);
+    color: color(accent);
+    transition: $transition-time;
+    border-color: color(text-white);
+  }
+}
+
+.icon:focus i {
+  background-color: color(text-white);
+  color: color(accent);
+  transition: $transition-time;
+  border-color: color(text-white);
+}
+
+.portImage {
+  width: 17.2em;
+  height: 14em;
+  border-radius: 5%;
+  border: 0.3rem solid color(accent);
+}
+
+.portfolio {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.labelText {
+  padding: 0.5em 0 0.5em 0.4em;
+}
+
+.me {
+  margin: 0.35em 1.25em 1.25em 0;
+  float: left;
+  width: 9rem;
+}
+
+.pageTitle {
+  color: color(text-white);
+  font-size: 2em;
+  font-family: $head-font;
+  text-align: left;
+  margin-bottom: 0.5em;
+  width: 100%;
+}
+
+.tech {
+  font-size: 0.7em;
+  padding-top: 0.55em;
+}

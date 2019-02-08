@@ -5,22 +5,57 @@ article {
 body {
   background-color: #898b8b;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   height: 100vh;
 }
 
 h1 {
   background-color: #000300;
-  color: #f7f9f9;
-  float: left;
+  color: #e5dada;
   font-family: "Roboto Slab", serif;
   font-size: 2.5em;
   padding: 0.25em;
   text-align: left;
 }
 
+main a:hover {
+  background-color: #e59500;
+  color: #e5dada;
+  -webkit-transition: 0.33s ease;
+  transition: 0.33s ease;
+}
+
+nav {
+  color: #e5dada;
+  font-family: "Oxygen", sans-serif;
+  font-weight: 500;
+  padding-top: 1.3em;
+  text-decoration: none;
+  text-align: right;
+}
+
+nav a:hover {
+  background-color: #e59500;
+  color: #000300;
+  -webkit-transition: 0.33s ease;
+  transition: 0.33s ease;
+}
+
+footer {
+  background-color: #000300;
+  bottom: 0;
+  color: #e5dada;
+  height: 3em;
+  font-family: "Oxygen", sans-serif;
+  font-size: 0.8em;
+  position: fixed;
+  width: 100%;
+}
+
 .about {
-  color: #f7f9f9;
+  color: #e5dada;
   font-family: "Oxygen", sans-serif;
   line-height: 1.5em;
   font-size: 1.15em;
@@ -29,39 +64,45 @@ h1 {
 }
 
 .anav {
-  color: #f7f9f9;
+  color: #e5dada;
   text-decoration: none;
   padding: 0.1em;
 }
 
-.container {
-  background: #3f4045;
-  color: #000300;
-  margin: 4em auto 1em;
-  padding: 1.25em;
-  width: 85%;
-  top: 1.5em;
-  position: relative;
-  border-top: 1.2em solid #000300;
-  height: fit-content;
-}
-
 .contacts div {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-grow: 1;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 .contacts h3 {
-  color: #f7f9f9;
+  color: #e5dada;
   font-size: 1.25em;
   font-family: "Oxygen", sans-serif;
-  line-height: 1.5em;
+  line-height: 1.5;
   margin: 0.25em;
 }
 
 .contacts a {
   text-decoration: none;
-  color: #f7f9f9;
+  color: #e5dada;
+}
+
+.content-box {
+  background: #3f4045;
+  color: #000300;
+  margin: 4em auto 1em;
+  padding: 1.25rem;
+  width: 85%;
+  top: 1.5rem;
+  position: relative;
+  border-top: 1.2em solid #000300;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 .headClass {
@@ -76,27 +117,39 @@ h1 {
   text-decoration: none;
   width: 100%;
   z-index: 1;
-  justify-content: space-between;
-  color: #f7f9f9;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #e5dada;
 }
 
-.headWidth {
+.container {
   width: 88%;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-nav a:hover {
-  background-color: #e59500;
-  color: #000300;
-  transition: 0.33s ease;
+.container a {
+  color: #e5dada;
+  text-decoration: none;
+  padding: 0.1em;
 }
 
 .labelPhoto {
   background: #235789;
   bottom: 3.8em;
   color: #e5dada;
-  justify-content: stretch;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: stretch;
+      -ms-flex-pack: stretch;
+          justify-content: stretch;
   font-family: "Roboto Slab", serif;
   font-size: 1.2em;
   position: relative;
@@ -113,7 +166,8 @@ nav a:hover {
 .labelPhoto a:hover,
 .labelPhoto h1:focus {
   background-color: #e59500;
-  color: #f7f9f9;
+  color: #e5dada;
+  -webkit-transition: 0.33s ease;
   transition: 0.33s ease;
 }
 
@@ -122,33 +176,45 @@ nav a:hover {
 }
 
 .labelText {
-  color: #f7f9f9;
+  color: #e5dada;
   text-decoration: none;
 }
 
 .grow:hover {
   -webkit-transform: scale(1.2);
-  -ms-transform: scale(1.2);
   transform: scale(1.2);
+}
+
+.photo {
+  margin: 0.3em 2.2em 0 0;
+  position: relative;
 }
 
 .photo i {
   font-size: 3em;
   background: #000300;
   border-radius: 50%;
-  color: #f7f9f9;
+  color: #e5dada;
   position: absolute;
   bottom: 1.56em;
   left: 4.5em;
   border: 0.063em solid #000300;
 }
 
-.photo i:hover,
-.icon:focus i {
-  background-color: #f7f9f9;
+.photo i:hover {
+  background-color: #e5dada;
   color: #e59500;
+  -webkit-transition: 0.33s ease;
   transition: 0.33s ease;
-  border-color: #f7f9f9;
+  border-color: #e5dada;
+}
+
+.icon:focus i {
+  background-color: #e5dada;
+  color: #e59500;
+  -webkit-transition: 0.33s ease;
+  transition: 0.33s ease;
+  border-color: #e5dada;
 }
 
 .portImage {
@@ -159,18 +225,19 @@ nav a:hover {
 }
 
 .portfolio {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .labelText {
   padding: 0.5em 0 0.5em 0.4em;
-}
-
-.tech {
-  font-size: 0.7em;
-  padding-top: 0.55em;
 }
 
 .me {
@@ -179,17 +246,8 @@ nav a:hover {
   width: 9rem;
 }
 
-nav {
-  color: #e5dada;
-  font-family: "Oxygen", sans-serif;
-  font-weight: 500;
-  padding-top: 1.3em;
-  text-decoration: none;
-  text-align: right;
-}
-
 .pageTitle {
-  color: #f7f9f9;
+  color: #e5dada;
   font-size: 2em;
   font-family: "Roboto Slab", serif;
   text-align: left;
@@ -197,113 +255,8 @@ nav {
   width: 100%;
 }
 
-.photo {
-  margin: 0.3em 2.2em 0 0;
-  position: relative;
+.tech {
+  font-size: 0.7em;
+  padding-top: 0.55em;
 }
-
-main a:hover {
-  background-color: #e59500;
-  color: #f7f9f9;
-  transition: 0.33s ease;
-}
-
-footer {
-  background-color: #000300;
-  bottom: 0;
-  color: #ebebeb;
-  height: 3em;
-  font-family: "Oxygen", sans-serif;
-  font-size: 0.8em;
-  position: fixed;
-  width: 100%;
-}
-
-@media only screen and (max-width: 980px) {
-  article {
-    align-content: left;
-  }
-
-  .container {
-    width: 80%;
-    margin: 0 left;
-  }
-
-  .headClass {
-    margin: 0 left;
-    width: 100%;
-  }
-
-  nav {
-    width: 100%;
-  }
-
-  .headWidth {
-    width: 90%;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .container {
-    width: 100%;
-    margin: 0 left;
-  }
-
-  .headClass {
-    width: 100%;
-    background: #3f4045;
-  }
-
-  .headWidth {
-    width: 90%;
-  }
-}
-
-@media only screen and (max-width: 640px) {
-  .anav {
-    height: 3.5em;
-    text-align: center;
-  }
-
-  .headClass {
-    height: 5.3em;
-    background: #000300;
-    width: 100%;
-  }
-
-  .headWidth {
-    width: 100%;
-    text-align: center;
-  }
-
-  h1 {
-    width: 100%;
-    text-align: center;
-  }
-
-  .photo {
-    margin: 0 auto;
-  }
-
-  nav {
-    width: 100%;
-    height: 4em;
-    text-align: center;
-  }
-
-  .container {
-    width: 100%;
-    position: relative;
-    margin-bottom: 1em;
-    border: 0;
-  }
-
-  .me {
-    width: 100%;
-  }
-
-  footer {
-    padding: 0;
-    text-align: center;
-  }
-}
+/*# sourceMappingURL=style.css.map */
