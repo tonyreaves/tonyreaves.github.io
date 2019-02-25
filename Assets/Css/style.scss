@@ -82,7 +82,7 @@ nav {
   color: color(text-white);
   font-family: $body-font;
   font-weight: 500;
-  padding-top: 1.3em;
+  padding-top: 1.35rem;
   text-decoration: none;
   text-align: right;
   box-sizing: border-box;
@@ -96,11 +96,13 @@ nav {
 
   @include laptop {
     width: 100%;
+    padding-top: 0;
+    margin-top: -2.2rem;
   }
 
   @include mobile {
-    height: 4em;
     text-align: center;
+    margin-top: 0.5rem;
   }
 }
 
