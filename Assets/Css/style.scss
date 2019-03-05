@@ -271,7 +271,7 @@ footer {
   h1:focus {
     background-color: color(accent);
     color: color(text-white);
-    transition: 0.33s ease;
+    transition: $transition-time;
   }
 
   p {
@@ -326,8 +326,8 @@ footer {
 .portImage {
   width: 17.2em;
   height: 14em;
-  border-radius: 5%;
-  border: 0.3rem solid color(accent);
+  border: 0.2rem solid color(accent);
+  clip-path: polygon(100% 0, 100% 69.5%, 78.5% 100%, 0 100%, 0 0);
 }
 
 .portfolio {

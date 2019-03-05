@@ -344,8 +344,9 @@ footer {
 .portImage {
   width: 17.2em;
   height: 14em;
-  border-radius: 5%;
-  border: 0.3rem solid #e59500;
+  border: 0.2rem solid #e59500;
+  -webkit-clip-path: polygon(100% 0, 100% 69.5%, 78.5% 100%, 0 100%, 0 0);
+          clip-path: polygon(100% 0, 100% 69.5%, 78.5% 100%, 0 100%, 0 0);
 }
 
 .portfolio {
